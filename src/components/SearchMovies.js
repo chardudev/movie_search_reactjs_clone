@@ -5,10 +5,8 @@ export default function SearchMovies() {
 	const [query, setQuery] = useState("");
 	const [movies, setMovies] = useState([])
 
-
 	const searchMovies = async (e) => {
 		e.preventDefault();
-		// const query = "Saving Face"
 		const url = `https://api.themoviedb.org/3/search/movie?api_key=69fa41a3b95809e275f4f59cf3a2902b&query=${query}`
 
 		try {
@@ -19,7 +17,6 @@ export default function SearchMovies() {
 			console.log(e);
 		}
 	}
-
 
 	return (
 		<>
