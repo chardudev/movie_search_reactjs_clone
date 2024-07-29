@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
+import SearchMovies from "./components/SearchMovies"
 
 function App() {
   return (
-    <div className="App">
-      hello
+    <div className="container">
+      <h1 className='title'>Movie Search</h1>
+      <SearchMovies />
     </div>
   );
 }
